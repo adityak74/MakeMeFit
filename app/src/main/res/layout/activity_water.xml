@@ -1,0 +1,77 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:cardView="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e3e3e3"
+    android:padding="5dp"
+    tools:context=".MainActivity">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <android.support.v7.widget.CardView
+                xmlns:android="http://schemas.android.com/apk/res/android"
+
+                cardView:cardBackgroundColor="#ffffff"
+                app:cardElevation="4dp"
+                android:id="@+id/card_view1"
+                android:layout_width="fill_parent"
+
+                android:layout_height="350dp"
+                android:layout_marginBottom="5dp"
+                android:layout_alignParentTop="true">
+
+                <TextView
+                    android:padding="10dp"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="Hydration keeps your brain and body active. Drinking water at right time prevents 90% of diseases.\n\nWhy timings are set default?
+Standard timings are set based on psychological research. You can set remainders off anytime."
+                    android:textColor="#555555"
+                    android:id="@+id/tvWater"
+                    android:layout_gravity="center"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true" />
+
+            </android.support.v7.widget.CardView>
+
+
+
+
+            <android.support.v7.widget.CardView
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                cardView:cardBackgroundColor="#ffffff"
+                app:cardElevation="4dp"
+                android:id="@+id/card_view"
+                android:layout_height="60dp"
+                android:layout_width="fill_parent"
+                >
+
+                <Switch
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="10dp"
+                    android:text="Remind me to drink water"
+                    android:id="@+id/waterSwitch"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true" />
+
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

@@ -1,0 +1,294 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:cardView="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e3e3e3"
+    android:padding="5dp"
+    tools:context=".MainActivity">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+    <android.support.v7.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        cardView:cardBackgroundColor="#ffffff"
+        app:cardElevation="4dp"
+        android:layout_margin="5dp"
+        android:id="@+id/card_view1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal|center_vertical"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Your Health Is Our Priority."
+            android:textColor="#1a4e91"
+            android:padding="10dp"
+            android:textStyle="bold"
+            android:id="@+id/tvMainHead"
+            android:layout_gravity="center"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal|center_vertical"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="The goal of the app is to help you stay fit and healthy by reminding you to drink water,have food and take medications at apt times with a human touch."
+            android:textColor="#555555"
+            android:padding="10dp"
+            android:id="@+id/tvMain"
+            android:layout_gravity="center"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+
+
+
+        <android.support.v7.widget.CardView
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            cardView:cardBackgroundColor="#ffffff"
+            app:cardElevation="4dp"
+            android:layout_margin="5dp"
+            android:id="@+id/card_view"
+            android:layout_width="fill_parent"
+            android:layout_height="350dp"
+            >
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true">
+
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:weightSum="2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:weightSum="2"
+                        android:layout_weight="1"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:layout_width="140dp"
+                            android:layout_height="160dp"
+                            android:layout_weight="1"
+                            android:layout_row="0"
+                            android:weightSum="3"
+                            android:id="@+id/water"
+                            android:orientation="vertical"
+                            android:layout_column="1"
+                            android:src="@mipmap/ic_launcher"
+                            android:layout_marginTop="5dp">
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="110dp"
+                                android:id="@+id/im_stud"
+                                android:layout_weight="1.8"
+                                android:layout_gravity="center"
+                                android:src="@drawable/ic_water"
+                                />
+                            <TextView
+
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:gravity="top|center"
+                                android:text="WATER"
+                                android:textColor="#1a4e91"
+                                android:shadowColor="#ff9e9e9e"
+                                android:shadowDx="1"
+                                android:shadowDy="1"
+                                android:shadowRadius="2"
+
+                                android:layout_weight="1.2"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" />
+
+
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="4dp"
+                            android:layout_height="match_parent"
+                            android:background="#e3e3e3"
+                            />
+
+                        <LinearLayout
+                            android:layout_width="140dp"
+                            android:layout_height="160dp"
+                            android:layout_row="0"
+                            android:layout_weight="1"
+                            android:weightSum="3"
+                            android:id="@+id/food"
+                            android:orientation="vertical"
+                            android:layout_column="2"
+                            android:src="@mipmap/ic_launcher"
+                            android:layout_marginTop="5dp">
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="110dp"
+                                android:layout_weight="1.8"
+                                android:id="@+id/im_staf"
+                                android:layout_gravity="center"
+                                android:src="@drawable/ic_food"
+                                />
+                            <TextView
+
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:gravity="top|center"
+                                android:text="FOOD"
+                                android:textColor="#1a4e91"
+                                android:shadowColor="#ff9e9e9e"
+                                android:shadowDx="1"
+                                android:shadowDy="1"
+                                android:shadowRadius="2"
+                                android:layout_weight="1.2"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="4dp"
+                        android:background="#e3e3e3"
+                        />
+
+                    <LinearLayout
+                        android:weightSum="2"
+                        android:layout_weight="1"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:layout_width="140dp"
+                            android:layout_height="160dp"
+                            android:layout_weight="1"
+                            android:layout_row="0"
+                            android:id="@+id/coffee"
+                            android:weightSum="3"
+                            android:orientation="vertical"
+                            android:layout_column="1"
+                            android:src="@mipmap/ic_launcher"
+                            android:layout_marginTop="5dp">
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="110dp"
+                                android:id="@+id/im_ia"
+                                android:layout_weight="1.8"
+                                android:layout_gravity="center"
+                                android:src="@drawable/ic_request"
+                                />
+
+                            <TextView
+
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:gravity="top|center"
+                                android:text="FEEDBACK"
+                                android:textColor="#1a4e91"
+                                android:shadowColor="#ff9e9e9e"
+                                android:shadowDx="1"
+                                android:shadowDy="1"
+                                android:shadowRadius="2"
+                                android:layout_weight="1.2"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" />
+
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="4dp"
+                            android:layout_height="match_parent"
+                            android:background="#e3e3e3"
+                            />
+
+                        <LinearLayout
+                            android:layout_width="140dp"
+                            android:layout_height="160dp"
+                            android:layout_row="0"
+                            android:layout_weight="1"
+                            android:weightSum="3"
+                            android:id="@+id/about"
+                            android:orientation="vertical"
+                            android:layout_column="2"
+                            android:src="@mipmap/ic_launcher"
+                            android:layout_marginTop="5dp">
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="110dp"
+                                android:layout_weight="1.8"
+                                android:id="@+id/im_dcm"
+                                android:layout_gravity="center"
+                                android:src="@drawable/ic_med"
+                                />
+
+                            <TextView
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:gravity="top|center"
+                                android:text="MEDICATION"
+                                android:textColor="#1a4e91"
+                                android:shadowColor="#ff9e9e9e"
+                                android:shadowDx="1"
+                                android:shadowDy="1"
+                                android:shadowRadius="2"
+                                android:layout_weight="1.2"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+    </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

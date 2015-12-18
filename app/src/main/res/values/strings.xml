@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Make Me Fit</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_water">Water Reminder</string>
+    <string name="title_activity_food">Food Reminder</string>
+    <string name="title_activity_coffee">Coffee Reminder</string>
+    <string name="title_activity_feedback">Feedback</string>
+    <string name="title_activity_splash"></string>
+    <string name="title_activity_settings">Settings</string>
+
+    <color name="background_action_bar">#1A4E91</color>
+    <string name="title_activity_med">Medication Reminder</string>
+
+</resources>

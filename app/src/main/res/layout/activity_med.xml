@@ -1,0 +1,197 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:cardView="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e3e3e3"
+    android:padding="5dp"
+    tools:context=".MainActivity">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.v7.widget.CardView
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                cardView:cardBackgroundColor="#ffffff"
+                app:cardElevation="4dp"
+                android:layout_margin="5dp"
+                android:id="@+id/card_view"
+                android:layout_height="wrap_content"
+                android:layout_width="fill_parent"
+                >
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/md1"
+                        android:layout_margin="10dp"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:gravity="start|top"
+                        android:text="Morning Schedule"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:layout_below="@+id/md1"
+                        android:id="@+id/md12"
+                        android:text="Switch On the button to select time."
+                        android:layout_marginLeft="10dp"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <Switch
+                        android:layout_below="@id/md12"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:padding="10dp"
+                        android:text="On | Off"
+                        android:id="@+id/md1_switch"
+                         />
+
+                    <TextView
+                        android:id="@+id/md1_tv"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_below="@+id/md1_switch"
+                        android:text="Reminder not set"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                cardView:cardBackgroundColor="#ffffff"
+                app:cardElevation="4dp"
+                android:layout_margin="5dp"
+                android:id="@+id/card_view2"
+                android:layout_height="wrap_content"
+                android:layout_width="fill_parent"
+                >
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/md2"
+                        android:layout_margin="10dp"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:gravity="start|top"
+                        android:text="Noon Schedule"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:layout_below="@+id/md2"
+                        android:id="@+id/md22"
+                        android:text="Switch On the button to select time."
+                        android:layout_marginLeft="10dp"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <Switch
+                        android:layout_below="@id/md22"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:padding="10dp"
+                        android:text="On | Off"
+                        android:id="@+id/md2_switch"
+                         />
+
+                    <TextView
+                        android:id="@+id/md2_tv"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_below="@+id/md2_switch"
+                        android:text="Reminder not set"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+
+
+
+                </RelativeLayout>
+
+
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                cardView:cardBackgroundColor="#ffffff"
+                app:cardElevation="4dp"
+                android:layout_margin="5dp"
+                android:id="@+id/card_view3"
+                android:layout_height="wrap_content"
+                android:layout_width="fill_parent"
+                >
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/md3"
+                        android:layout_margin="10dp"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:gravity="start|top"
+                        android:text="Evening Schedule"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:layout_below="@+id/md3"
+                        android:id="@+id/md32"
+                        android:text="Switch On the button to select time."
+                        android:layout_marginLeft="10dp"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <Switch
+                        android:layout_below="@id/md32"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:padding="10dp"
+                        android:text="On | Off"
+                        android:id="@+id/md3_switch"
+                         />
+
+                    <TextView
+                        android:id="@+id/md3_tv"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_below="@+id/md3_switch"
+                        android:text="Reminder not set"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+
+
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>
