@@ -23,7 +23,7 @@
         xmlns:android="http://schemas.android.com/apk/res/android"
         cardView:cardBackgroundColor="#ffffff"
         app:cardElevation="4dp"
-        android:layout_margin="5dp"
+        android:layout_marginBottom="5dp"
         android:id="@+id/card_view1"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
@@ -40,7 +40,7 @@
             android:layout_height="wrap_content"
             android:gravity="center_horizontal|center_vertical"
             android:textAppearance="?android:attr/textAppearanceLarge"
-            android:text="Your Health Is Our Priority."
+            android:text="Your Health Is Our Priority"
             android:textColor="#1a4e91"
             android:padding="10dp"
             android:textStyle="bold"
@@ -66,14 +66,35 @@
 
     </android.support.v7.widget.CardView>
 
+        <android.support.v7.widget.CardView
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            cardView:cardBackgroundColor="#2980b9"
+            app:cardElevation="4dp"
+            android:layout_marginBottom="5dp"
+            android:id="@+id/news_card"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            >
 
+            <TextView
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:padding="15dp"
+                android:textAllCaps="true"
+                android:textColor="#fff"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Tap here to know what's new"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </android.support.v7.widget.CardView>
 
 
         <android.support.v7.widget.CardView
             xmlns:android="http://schemas.android.com/apk/res/android"
             cardView:cardBackgroundColor="#ffffff"
             app:cardElevation="4dp"
-            android:layout_margin="5dp"
+            android:layout_marginBottom="5dp"
             android:id="@+id/card_view"
             android:layout_width="fill_parent"
             android:layout_height="350dp"

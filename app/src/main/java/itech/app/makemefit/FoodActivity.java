@@ -10,7 +10,9 @@ import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 import android.webkit.WebView;
+import android.widget.Button;
 import android.widget.CompoundButton;
 import android.widget.Switch;
 import android.widget.TextView;
@@ -25,6 +27,7 @@ public class FoodActivity extends ActionBarActivity {
     private SharedPrefHandler sharedPrefHandler;
     private WebView webView;
     private TextView textView;
+    private Button customizeFoodButton;
 
 
     @Override
@@ -42,7 +45,15 @@ public class FoodActivity extends ActionBarActivity {
         textView.setTypeface(face);
         mySwitch.setTypeface(face);
 
+        customizeFoodButton = (Button) findViewById(R.id.customizeFoodButton);
 
+        customizeFoodButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent settings = new Intent(FoodActivity.this, SettingsActivity.class);
+                startActivity(settings);
+            }
+        });
 
 
         if(sharedPrefHandler.getSharedPreferences("food").equals("true")){

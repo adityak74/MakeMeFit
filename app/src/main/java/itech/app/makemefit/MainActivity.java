@@ -12,6 +12,7 @@ import android.graphics.drawable.ColorDrawable;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
+import android.support.v7.widget.CardView;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -29,6 +30,7 @@ public class MainActivity extends ActionBarActivity {
     private SharedPrefHandler sharedPrefHandler;
     private TextView textView,textView1;
     private Typeface face,faceb;
+    private CardView news_card;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -43,6 +45,39 @@ public class MainActivity extends ActionBarActivity {
         faceb= Typeface.createFromAsset(getAssets(), "font/ubuntub.ttf");
         textView.setTypeface(face);
         textView1.setTypeface(faceb);
+
+        news_card = (CardView) findViewById(R.id.news_card);
+
+        news_card.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                final AlertDialog alertDialog = new AlertDialog.Builder(MainActivity.this).create();
+                View view = getLayoutInflater().inflate(R.layout.activity_new_alert, null);
+                TextView tv = (TextView)view.findViewById(R.id.tvDeveloper);
+                tv.setTypeface(face);
+                alertDialog.setView(view);
+                // Setting Dialog Title
+                alertDialog.setTitle("What's New");
+
+                // Setting Dialog Message
+                //alertDialog.setMessage("Developed by Inwhizz IT Innovations Pvt Ltd.");
+
+                // Setting Icon to Dialog
+                alertDialog.setIcon(R.drawable.ic_inwhizz_alert_icon);
+
+                // Setting OK Button
+                alertDialog.setButton("CLOSE", new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog, int which) {
+                        // Write your code here to execute after dialog closed
+                        //Toast.makeText(getApplicationContext(), "You clicked on OK", Toast.LENGTH_SHORT).show();
+                        alertDialog.dismiss();
+                    }
+                });
+
+                // Showing Alert Message
+                alertDialog.show();
+            }
+        });
 
         if(sharedPrefHandler.getSharedPreferences("welcome").equals("NF") || sharedPrefHandler.getSharedPreferences("welcome").equals("false")){
             final AlertDialog alertDialog = new AlertDialog.Builder(

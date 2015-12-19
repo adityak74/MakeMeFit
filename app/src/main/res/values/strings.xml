@@ -13,4 +13,15 @@
     <color name="background_action_bar">#1A4E91</color>
     <string name="title_activity_med">Medication Reminder</string>
 
+    <string name="versiontext">
+        v1.3\n
+        Medication reminders and F.A.Q added.\n\n
+        v1.2\n
+        Corrected grammar mistakes and layout refinement.\n\n
+        v1.1\n
+        Added App Sharing link to Home.\n\n
+        v1.0\n
+        First Release.
+    </string>
+
 </resources>

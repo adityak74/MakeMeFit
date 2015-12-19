@@ -18,6 +18,46 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
+            <android.support.v7.widget.CardView
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                cardView:cardBackgroundColor="#ffffff"
+                app:cardElevation="4dp"
+                android:layout_marginBottom="5dp"
+                android:id="@+id/card_view"
+                android:layout_height="wrap_content"
+                android:layout_width="fill_parent"
+                >
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <Switch
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:padding="20dp"
+                        android:text="Remind me to have food"
+                        android:id="@+id/foodSwitch"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true" />
+
+                    <Button
+                        android:id="@+id/customizeFoodButton"
+                        android:text="Customize"
+                        android:textSize="16sp"
+                        android:layout_margin="10dp"
+                        android:textColor="#fff"
+                        android:background="#2980b9"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+
+                </LinearLayout>
+
+
+
+            </android.support.v7.widget.CardView>
+
 
             <android.support.v7.widget.CardView
                 xmlns:android="http://schemas.android.com/apk/res/android"
@@ -27,16 +67,16 @@
                 android:id="@+id/card_view1"
                 android:layout_width="fill_parent"
 
-                android:layout_height="350dp"
-                android:layout_marginBottom="5dp"
+                android:layout_height="wrap_content"
+
                 android:layout_alignParentTop="true">
 
                 <TextView
-                    android:padding="10dp"
+                    android:padding="20dp"
                     android:gravity="center_horizontal|center_vertical"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
                     android:text="In the motive to become successful most people forget to have food at right time.\n\nWhy timings are set default?
 Standard timings are set based on psychological research. You can set remainders off anytime."
                     android:textColor="#555555"
@@ -49,27 +89,376 @@ Standard timings are set based on psychological research. You can set remainders
             </android.support.v7.widget.CardView>
 
 
-
+            <View
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="7dp"
+                android:layout_marginBottom="7dp"
+                android:layout_gravity="center"
+                android:background="#1a4e91"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"/>
 
             <android.support.v7.widget.CardView
                 xmlns:android="http://schemas.android.com/apk/res/android"
                 cardView:cardBackgroundColor="#ffffff"
                 app:cardElevation="4dp"
-                android:id="@+id/card_view"
-                android:layout_height="60dp"
+                android:layout_marginBottom="5dp"
+                android:id="@+id/card_view222"
+                android:layout_height="wrap_content"
                 android:layout_width="fill_parent"
                 >
 
-                <Switch
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:padding="10dp"
-                    android:text="Remind me to have food"
-                    android:id="@+id/foodSwitch"
-                    android:layout_alignParentBottom="true"
-                    android:layout_centerHorizontal="true" />
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/st22"
+                        android:layout_margin="10dp"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:gravity="start|top"
+                        android:text="Best time to eat food."
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:layout_below="@+id/st22"
+                        android:id="@+id/st212"
+                        android:text="The best time to have breakfast is 08:00 as it your body and brain needs energy. Have it like a king.\n
+The best time to have lunch is 13:00 as your body needs enery again if you have breakfast at 08:00. \n
+The best time to have dinner is 20:00 as you need to have good sleep and wake early next morning."
+                        android:padding="10dp"
+                        android:textAlignment="gravity"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                </RelativeLayout>
 
             </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                cardView:cardBackgroundColor="#ffffff"
+                app:cardElevation="4dp"
+                android:layout_marginBottom="5dp"
+                android:id="@+id/card_view223"
+                android:layout_height="wrap_content"
+                android:layout_width="fill_parent"
+                >
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/st23"
+                        android:layout_margin="10dp"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:gravity="start|top"
+                        android:text="Don't skip meals"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:layout_below="@+id/st23"
+                        android:id="@+id/st213"
+                        android:text="Always eat breakfast, as this starts your metabolism going early in the morning (since it slows down at night because you haven't eaten anything for a while). You will also want to make sure to eat at regular intervals, to help make sure your body has the fuel it needs to run all day."
+                        android:textAlignment="gravity"
+                        android:padding="10dp"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                cardView:cardBackgroundColor="#ffffff"
+                app:cardElevation="4dp"
+                android:layout_marginBottom="5dp"
+                android:id="@+id/card_view224"
+                android:layout_height="wrap_content"
+                android:layout_width="fill_parent"
+                >
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/st24"
+                        android:layout_margin="10dp"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:gravity="start|top"
+                        android:text="Eat a balanced diet"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:layout_below="@+id/st24"
+                        android:id="@+id/st214"
+                        android:text="Include a healthy balance of nutrient-rich carbohydrates such as fruits, vegetables, and roots like potatoes. This will help make sure your body gets the right balance of the vital vitamins and minerals it needs in order to keep you strong and healthy. The recommended balance varies from diet plan to diet plan, and your ideal balance may be a little different from someone else's. However, some common options include:\n
+•   Eat a diet of 30% vegetables (dark colored vegetables are better, such as spinach) 20% fruit (eat the ones with more nutritional value, such as pomegranates), 20% carbohydrates (starches like wheat, rice and corn), 20% protein (which is found in meat, beans, and legumes), and 10% dairy products.\n
+•   Eating a diet of 80% carbohydrates such as fruits, vegetables, and starches like wheat, rice, and corn, 10% protein (which is found in meat, beans, and legumes), and 10% fats.
+"
+                        android:padding="10dp"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                cardView:cardBackgroundColor="#ffffff"
+                app:cardElevation="4dp"
+                android:layout_marginBottom="5dp"
+                android:id="@+id/card_view225"
+                android:layout_height="wrap_content"
+                android:layout_width="fill_parent"
+                >
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/st25"
+                        android:layout_margin="10dp"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:gravity="start|top"
+                        android:text="Don't drink chemicals masquerading as food"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:layout_below="@+id/st25"
+                        android:id="@+id/st215"
+                        android:text="It is a good idea to drink water, juices, smoothies, teas, and such. However, soda, cola, and drinks that look like they are made in a lab should definitely be avoided."
+                        android:padding="10dp"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                cardView:cardBackgroundColor="#ffffff"
+                app:cardElevation="4dp"
+                android:layout_marginBottom="5dp"
+                android:id="@+id/card_view227"
+                android:layout_height="wrap_content"
+                android:layout_width="fill_parent"
+                >
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/st27"
+                        android:layout_margin="10dp"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:gravity="start|top"
+                        android:text="Eat fewer unhealthy fats and empty calories"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:layout_below="@+id/st27"
+                        android:id="@+id/st217"
+                        android:text="Generally reduce the amount of unhealthy saturated and Trans fats in your diet. These are found in foods like chips, margarine, oils and many boxed or frozen foods. Coconut oil is relatively the healthiest, but still not good."
+                        android:padding="10dp"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                cardView:cardBackgroundColor="#ffffff"
+                app:cardElevation="4dp"
+                android:layout_marginBottom="5dp"
+                android:id="@+id/card_view228"
+                android:layout_height="wrap_content"
+                android:layout_width="fill_parent"
+                >
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/st28"
+                        android:layout_margin="10dp"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:gravity="start|top"
+                        android:text="Eat more nutrient rich foods"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:layout_below="@+id/st28"
+                        android:id="@+id/st218"
+                        android:text="Try to focus on eating foods which deliver lots of vital nutrients to your body. These are foods rich in vitamins and minerals. You can try citrus fruits, dark greens like kale and spinach, grains like brown rice and quinoa, lean proteins like lentils and chickpeas."
+                        android:padding="10dp"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                cardView:cardBackgroundColor="#ffffff"
+                app:cardElevation="4dp"
+                android:layout_marginBottom="5dp"
+                android:id="@+id/card_view229"
+                android:layout_height="wrap_content"
+                android:layout_width="fill_parent"
+                >
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/st29"
+                        android:layout_margin="10dp"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:gravity="start|top"
+                        android:text="Eat when you’re hungry, stop when you're full"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:layout_below="@+id/st29"
+                        android:id="@+id/st219"
+                        android:text="Many people seem to think that people get hungry at about 9 AM, 12 noon, and again at 6 PM. While this may be a generally good schedule for eating, remember that you don't have to eat at mealtime if you're not hungry yet. Also, if you are hungry between meals, go ahead and eat a meal. It's not good to starve yourself between meals: if you allow yourself to become too hungry, you'll just eat tons of quick easy garbage."
+                        android:padding="10dp"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                cardView:cardBackgroundColor="#ffffff"
+                app:cardElevation="4dp"
+                android:layout_marginBottom="5dp"
+                android:id="@+id/card_view2211"
+                android:layout_height="wrap_content"
+                android:layout_width="fill_parent"
+                >
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/st211"
+                        android:layout_margin="10dp"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:gravity="start|top"
+                        android:text="Eat better portion sizes"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:layout_below="@+id/st211"
+                        android:id="@+id/st2111"
+                        android:text="•   Remember that your stomach is about the size of your fist. Don't expect to stuff 10 times that amount of junk into it without negative consequences. However, if you eat lots of fruits, you should eat a lot, as you will have lots of energy and be vibrant throughout the day.\n
+•   Don’t worry about how many calories you’re eating. After all, a cow can graze all day and not become obese! If you eat lots of dairy and meat, however, you will inevitably end up either starving or gaining weight. Eat lots of fruits and veggies!"
+                        android:padding="10dp"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                cardView:cardBackgroundColor="#ffffff"
+                app:cardElevation="4dp"
+                android:layout_marginBottom="5dp"
+                android:id="@+id/card_view226"
+                android:layout_height="wrap_content"
+                android:layout_width="fill_parent"
+                >
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/st26"
+                        android:layout_margin="10dp"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:gravity="start|top"
+                        android:text="Don’t eat a huge meal when you go out"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:layout_below="@+id/st26"
+                        android:id="@+id/st216"
+                        android:text="It’s very reasonable to want to eat a delicious meal at a restaurant, especially if you aren’t a very good cook. But understand that restaurant meals are often way too big. You shouldn’t eat that much food in one sitting! Instead, eat only half the meal and save the rest for lunch the next day. You can also order an appetizer, rather than a full meal if you know those portions may be better."
+                        android:padding="10dp"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                xmlns:android="http://schemas.android.com/apk/res/android"
+
+                cardView:cardBackgroundColor="#ffffff"
+                app:cardElevation="4dp"
+                android:id="@+id/card_view12"
+                android:layout_width="fill_parent"
+
+                android:layout_height="wrap_content"
+
+                android:layout_alignParentTop="true">
+
+                <TextView
+                    android:padding="20dp"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="Courtesy:\n http://www.wikihow.com/Eat-Properly"
+                    android:textColor="#555555"
+                    android:id="@+id/tvFoodt"
+                    android:layout_gravity="center"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true" />
+
+
+            </android.support.v7.widget.CardView>
+
 
         </LinearLayout>
     </ScrollView>

@@ -23,7 +23,7 @@ public class WaterActivity extends ActionBarActivity {
     private Switch mySwitch;
     private Context ctx = this;
     private SharedPrefHandler sharedPrefHandler;
-    private TextView textView;
+    private TextView textView,whead;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -34,9 +34,12 @@ public class WaterActivity extends ActionBarActivity {
         sharedPrefHandler = new SharedPrefHandler(this);
 
         textView = (TextView)findViewById(R.id.tvWater);
+        whead = (TextView) findViewById(R.id.st22);
+
         Typeface face= Typeface.createFromAsset(getAssets(), "font/ubuntu.ttf");
         textView.setTypeface(face);
         mySwitch.setTypeface(face);
+        whead.setTypeface(face);
 
         if(sharedPrefHandler.getSharedPreferences("water").equals("true")){
             mySwitch.setChecked(true);

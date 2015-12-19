@@ -21,22 +21,41 @@
 
             <android.support.v7.widget.CardView
                 xmlns:android="http://schemas.android.com/apk/res/android"
+                cardView:cardBackgroundColor="#ffffff"
+                app:cardElevation="4dp"
+                android:id="@+id/card_view"
+                android:layout_marginBottom="5dp"
+                android:layout_height="wrap_content"
+                android:layout_width="fill_parent"
+                >
 
+                <Switch
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="20dp"
+                    android:text="Remind me to drink water"
+                    android:id="@+id/waterSwitch"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true" />
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                xmlns:android="http://schemas.android.com/apk/res/android"
                 cardView:cardBackgroundColor="#ffffff"
                 app:cardElevation="4dp"
                 android:id="@+id/card_view1"
                 android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
 
-                android:layout_height="350dp"
-                android:layout_marginBottom="5dp"
                 android:layout_alignParentTop="true">
 
                 <TextView
-                    android:padding="10dp"
+                    android:padding="20dp"
                     android:gravity="center_horizontal|center_vertical"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
                     android:text="Hydration keeps your brain and body active. Drinking water at right time prevents 90% of diseases.\n\nWhy timings are set default?
 Standard timings are set based on psychological research. You can set remainders off anytime."
                     android:textColor="#555555"
@@ -48,27 +67,231 @@ Standard timings are set based on psychological research. You can set remainders
             </android.support.v7.widget.CardView>
 
 
-
+            <View
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="7dp"
+                android:layout_marginBottom="7dp"
+                android:layout_gravity="center"
+                android:background="#1a4e91"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"/>
 
             <android.support.v7.widget.CardView
                 xmlns:android="http://schemas.android.com/apk/res/android"
                 cardView:cardBackgroundColor="#ffffff"
                 app:cardElevation="4dp"
-                android:id="@+id/card_view"
-                android:layout_height="60dp"
+                android:layout_marginBottom="5dp"
+                android:id="@+id/card_view2"
+                android:layout_height="wrap_content"
                 android:layout_width="fill_parent"
                 >
 
-                <Switch
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:padding="10dp"
-                    android:text="Remind me to drink water"
-                    android:id="@+id/waterSwitch"
-                    android:layout_alignParentBottom="true"
-                    android:layout_centerHorizontal="true" />
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/st221"
+                        android:layout_margin="10dp"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:gravity="center"
+                        android:textColor="#1a4e91"
+                        android:text="Why you need to drink water?"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                </RelativeLayout>
+
+
 
             </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                cardView:cardBackgroundColor="#ffffff"
+                app:cardElevation="4dp"
+                android:layout_marginBottom="5dp"
+                android:id="@+id/card_view222"
+                android:layout_height="wrap_content"
+                android:layout_width="fill_parent"
+                >
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/st22"
+                        android:layout_margin="10dp"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:gravity="start|top"
+                        android:text="Permanent Glow"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:layout_below="@+id/st22"
+                        android:id="@+id/st212"
+                        android:text="To get a permanent radiant skin, water therapy is a good way. It has been tested and tried since ancient times. It keeps your skin fresh, young and glowing. Many times you decide to follow a therapy, you do it for some time and then you simply leave it. But if you follow water therapy regularly, it will surely give you better results. It acts as a natural remedy in the body and protects it from many diseases."
+                        android:padding="10dp"
+                        android:textAlignment="gravity"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                cardView:cardBackgroundColor="#ffffff"
+                app:cardElevation="4dp"
+                android:layout_marginBottom="5dp"
+                android:id="@+id/card_view223"
+                android:layout_height="wrap_content"
+                android:layout_width="fill_parent"
+                >
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/st23"
+                        android:layout_margin="10dp"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:gravity="start|top"
+                        android:text="Removes Toxic Material"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:layout_below="@+id/st23"
+                        android:id="@+id/st213"
+                        android:text="A human body has about 70-80% of water, but still you need to drink lots of water every day to keep your body fit. Water helps in removing the toxic material from your body through urine and stool. If water intake is sufficient, your kidneys work efficiently. Similarly, you can prevent stomach disorders and can have proper bowel movement every day with adequate water intake. If impurities are thrown out of your body effectively, fresh blood is formed in sufficient amount in your body. The cause of skin problems is impure blood, which is related to metabolism."
+                        android:textAlignment="gravity"
+                        android:padding="10dp"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                cardView:cardBackgroundColor="#ffffff"
+                app:cardElevation="4dp"
+                android:layout_marginBottom="5dp"
+                android:id="@+id/card_view224"
+                android:layout_height="wrap_content"
+                android:layout_width="fill_parent"
+                >
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/st24"
+                        android:layout_margin="10dp"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:gravity="start|top"
+                        android:text="Keeps Your Skin And Body Hydrated"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:layout_below="@+id/st24"
+                        android:id="@+id/st214"
+                        android:text="A well hydrated body will always keep illnesses away. For purification of your body, it is essential to drink water as soon as you get up."
+                        android:padding="10dp"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                cardView:cardBackgroundColor="#ffffff"
+                app:cardElevation="4dp"
+                android:layout_marginBottom="5dp"
+                android:id="@+id/card_view225"
+                android:layout_height="wrap_content"
+                android:layout_width="fill_parent"
+                >
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/st25"
+                        android:layout_margin="10dp"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:gravity="start|top"
+                        android:text="Drinking Water In The Morning Has The Following Benefits"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:layout_below="@+id/st25"
+                        android:id="@+id/st215"
+                        android:text="•   You get bright, radiant skin because water removes all the toxins from the blood, leaving behind fresh skin. It helps in colon cleansing that leads to absorption of nutrients from the food you eat.
+\n•   If you drink water early in the morning, new blood and muscle cells are produced at an increasing rate.
+\n•   Water therapy gives a balance to the lymph system of your body. When the lymph glands in your lymph system get enough amount of water, they can fight the infections and help you carry out your daily chores easily.
+\n•   Water consumption prevents your skin from getting saggy as it improves the metabolism of your body. More intake of water will result in an increase in perspiration (sweating). Sweating will remove dirt, dead cells and dust particles from your skin pores. It gives suppleness to the skin."
+                        android:padding="10dp"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                cardView:cardBackgroundColor="#ffffff"
+                app:cardElevation="4dp"
+                android:layout_marginBottom="5dp"
+                android:id="@+id/card_view226"
+                android:layout_height="wrap_content"
+                android:layout_width="fill_parent"
+                >
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/st26"
+                        android:layout_margin="10dp"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:gravity="start|top"
+                        android:text="Promotes blood circulation"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:layout_below="@+id/st26"
+                        android:id="@+id/st216"
+                        android:text="Drinking 6 – 7 glasses of water per day slowly improves the metabolism of your body. As the blood is oxygenated well, your skin appears fresh and glowing. Gradually the water intake will be increased to 10-12 glasses of water a day. This will help to increase oxygen and nutrients in body which in turn imparts the glow in your skin. You can also consume some fluid filled fruits like watermelon, grapes, kiwi, oranges and others to enhance the water intake."
+                        android:padding="10dp"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
 
         </LinearLayout>
     </ScrollView>
