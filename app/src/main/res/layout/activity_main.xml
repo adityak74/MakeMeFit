@@ -140,6 +140,7 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="110dp"
                                 android:id="@+id/im_stud"
+
                                 android:layout_weight="1.8"
                                 android:layout_gravity="center"
                                 android:src="@drawable/ic_water"

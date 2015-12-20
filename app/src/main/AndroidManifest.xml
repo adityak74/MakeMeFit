@@ -6,6 +6,7 @@
 
     <application
         android:allowBackup="true"
+        android:logo="@drawable/app_logo_final"
         android:icon="@drawable/app_logo_final"
         android:label="@string/app_name"
         android:theme="@style/CustomTheme" >
