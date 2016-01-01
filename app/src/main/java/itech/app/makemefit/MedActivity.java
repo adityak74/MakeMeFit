@@ -6,6 +6,7 @@ import android.support.v4.app.NavUtils;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.text.InputFilter;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -23,7 +24,7 @@ import java.util.Calendar;
 public class MedActivity extends ActionBarActivity {
 
     private Switch md1,md2,md3;
-    private TextView md1tv,md2tv,md3tv;
+    private TextView md1tv,md2tv,md3tv,notetv;
     private SharedPrefHandler prefHandler;
     private EditText numet;
     private NumberPicker np1,np2,np3;
@@ -50,17 +51,20 @@ public class MedActivity extends ActionBarActivity {
 
         if(prefHandler.getSharedPreferences("m_med").equals("true")){
             md1.setChecked(true);
-            md1tv.setText("Reminder set at " + prefHandler.getSharedPreferences("m_med_time") + ":00");
+            if(!prefHandler.getSharedPreferences("m_med_time").equals("12"))
+            md1tv.setText("Reminder set at " + prefHandler.getSharedPreferences("m_med_time") + ":00 AM");
+            else
+            md1tv.setText("Reminder set at " + prefHandler.getSharedPreferences("m_med_time") + ":00 PM");
         }
 
         if(prefHandler.getSharedPreferences("n_med").equals("true")){
             md2.setChecked(true);
-            md2tv.setText("Reminder set at " + prefHandler.getSharedPreferences("n_med_time") + ":00");
+            md2tv.setText("Reminder set at " + (Integer.parseInt(prefHandler.getSharedPreferences("n_med_time"))-12) + ":00 PM");
         }
 
         if(prefHandler.getSharedPreferences("e_med").equals("true")){
             md3.setChecked(true);
-            md3tv.setText("Reminder set at " + prefHandler.getSharedPreferences("e_med_time") + ":00");
+            md3tv.setText("Reminder set at " + (Integer.parseInt(prefHandler.getSharedPreferences("e_med_time"))-12) + ":00 PM");
         }
 
         md1.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
@@ -72,6 +76,8 @@ public class MedActivity extends ActionBarActivity {
                     d1.setTitle("Select Morning Time");
                     d1.setContentView(R.layout.number_picker);
                     Button b1 = (Button) d1.findViewById(R.id.button1);
+                    notetv = (TextView) d1.findViewById(R.id.np_note);
+                    notetv.setText("6 AM - 12 PM");
                     //Button b2 = (Button) d1.findViewById(R.id.button2);
                     final NumberPicker np = (NumberPicker) d1.findViewById(R.id.np);
                     np.setMaxValue(12);
@@ -98,7 +104,10 @@ public class MedActivity extends ActionBarActivity {
                         public void onClick(View v) {
                             prefHandler.setSharedPreferences("m_med","true");
                             prefHandler.setSharedPreferences("m_med_time", String.valueOf(np.getValue()));
-                            md1tv.setText("Reminder set at " + String.valueOf(np.getValue()) + ":00");
+                            if(np.getValue()!=12)
+                            md1tv.setText("Reminder set at " + String.valueOf(np.getValue()) + ":00 AM");
+                            else
+                            md1tv.setText("Reminder set at " + String.valueOf(np.getValue()) + ":00 PM");
                             d1.dismiss();
                         }
                     });
@@ -106,6 +115,7 @@ public class MedActivity extends ActionBarActivity {
                     d1.show();
                 }else{
                     prefHandler.setSharedPreferences("m_med", "false");
+                    md1tv.setText("Reminder not set");
                 }
             }
         });
@@ -119,10 +129,12 @@ public class MedActivity extends ActionBarActivity {
                     d2.setTitle("Select Noon Time");
                     d2.setContentView(R.layout.number_picker);
                     Button b1 = (Button) d2.findViewById(R.id.button1);
+                    notetv = (TextView) d2.findViewById(R.id.np_note);
+                    notetv.setText("1 - 6 PM");
                     //Button b2 = (Button) d1.findViewById(R.id.button2);
                     final NumberPicker np = (NumberPicker) d2.findViewById(R.id.np);
-                    np.setMaxValue(18);
-                    np.setMinValue(13);
+                    np.setMaxValue(6);
+                    np.setMinValue(1);
                     np.setWrapSelectorWheel(false);
                     np.setOnValueChangedListener(new NumberPicker.OnValueChangeListener() {
                         @Override
@@ -134,8 +146,9 @@ public class MedActivity extends ActionBarActivity {
                         @Override
                         public void onClick(View v) {
                             prefHandler.setSharedPreferences("n_med","true");
-                            prefHandler.setSharedPreferences("n_med_time", String.valueOf(np.getValue()));
-                            md2tv.setText("Reminder set at " + String.valueOf(np.getValue()) + ":00");
+                            prefHandler.setSharedPreferences("n_med_time", String.valueOf(np.getValue()+12));
+                            Log.d("ttt",prefHandler.getSharedPreferences("n_med_time"));
+                            md2tv.setText("Reminder set at " + String.valueOf(np.getValue()) + ":00 PM");
                             d2.dismiss();
                         }
                     });
@@ -143,6 +156,7 @@ public class MedActivity extends ActionBarActivity {
                     d2.show();
                 }else{
                     prefHandler.setSharedPreferences("n_med", "false");
+                    md2tv.setText("Reminder not set");
                 }
             }
         });
@@ -156,10 +170,12 @@ public class MedActivity extends ActionBarActivity {
                     d3.setTitle("Select Evening Time");
                     d3.setContentView(R.layout.number_picker);
                     Button b1 = (Button) d3.findViewById(R.id.button1);
+                    notetv = (TextView) d3.findViewById(R.id.np_note);
+                    notetv.setText("7 - 11 PM");
                     //Button b2 = (Button) d1.findViewById(R.id.button2);
                     final NumberPicker np = (NumberPicker) d3.findViewById(R.id.np);
-                    np.setMaxValue(23);
-                    np.setMinValue(19);
+                    np.setMaxValue(11);
+                    np.setMinValue(7);
                     np.setWrapSelectorWheel(false);
                     np.setOnValueChangedListener(new NumberPicker.OnValueChangeListener() {
                         @Override
@@ -171,8 +187,9 @@ public class MedActivity extends ActionBarActivity {
                         @Override
                         public void onClick(View v) {
                             prefHandler.setSharedPreferences("e_med","true");
-                            prefHandler.setSharedPreferences("e_med_time", String.valueOf(np.getValue()));
-                            md3tv.setText("Reminder set at " + String.valueOf(np.getValue()) + ":00");
+                            prefHandler.setSharedPreferences("e_med_time", String.valueOf(np.getValue()+12));
+                            Log.d("ttt", prefHandler.getSharedPreferences("e_med_time"));
+                            md3tv.setText("Reminder set at " + String.valueOf(np.getValue()) + ":00 PM");
                             d3.dismiss();
                         }
                     });
@@ -180,6 +197,7 @@ public class MedActivity extends ActionBarActivity {
                     d3.show();
                 }else{
                     prefHandler.setSharedPreferences("e_med", "false");
+                    md3tv.setText("Reminder not set");
                 }
             }
         });

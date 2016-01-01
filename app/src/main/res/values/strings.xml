@@ -14,6 +14,8 @@
     <string name="title_activity_med">Medication Reminder</string>
 
     <string name="versiontext">
+        v1.4\n
+        Changed to 12-hour time format in Medication reminder.\n\n
         v1.3\n
         Medication reminders and F.A.Q added.\n\n
         v1.2\n

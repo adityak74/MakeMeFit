@@ -35,6 +35,15 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent">
 
+                    <TextView
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:padding="10dp"
+                        android:id="@+id/np_note"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
                     <NumberPicker
                         android:layout_marginTop="20dp"
                         android:layout_marginLeft="40dp"
