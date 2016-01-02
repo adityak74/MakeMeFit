@@ -37,7 +37,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textAppearance="?android:attr/textAppearanceMedium"
-                    android:text="Developed by:\n INWHIZZ IT Innovations Lab.\nDeveloper: Aditya.\nVersion: Beta"
+                    android:text="Developed by:\n INWHIZZ IT Innovations Lab\n------\nDeveloper: Aditya Karnam\nVersion: 1.5"
                     android:textColor="#555555"
                     android:id="@+id/tvDeveloper"
                     android:layout_gravity="center"

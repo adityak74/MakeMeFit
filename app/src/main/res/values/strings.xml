@@ -14,6 +14,10 @@
     <string name="title_activity_med">Medication Reminder</string>
 
     <string name="versiontext">
+        v1.5\n
+        Tablet name based custom reminder.\n
+        Emergency Ambulance Call Button.\n
+        Nearby Hospitals Search.\n\n
         v1.4\n
         Changed to 12-hour time format in Medication reminder.\n\n
         v1.3\n
@@ -25,5 +29,6 @@
         v1.0\n
         First Release.
     </string>
+    <string name="title_activity_hospitals_web">Nearby Hospitals</string>
 
 </resources>

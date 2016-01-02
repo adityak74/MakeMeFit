@@ -11,6 +11,10 @@
         app:showAsAction="never"
         android:title="About" />
 
+    <item android:id="@+id/menu_feedback"
+        app:showAsAction="never"
+        android:title="Feedback" />
+
     <item android:id="@+id/menu_settings"
         app:showAsAction="never"
         android:title="Settings" />

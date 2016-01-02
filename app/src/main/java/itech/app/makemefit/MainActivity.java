@@ -144,6 +144,18 @@ public class MainActivity extends ActionBarActivity {
             sharedPrefHandler.setSharedPreferences("e_med","false");
         }
 
+        if(sharedPrefHandler.getSharedPreferences("m_med_name").equals("NF")){
+            sharedPrefHandler.setSharedPreferences("m_med_name","NIL");
+        }
+
+        if(sharedPrefHandler.getSharedPreferences("n_med_name").equals("NF")){
+            sharedPrefHandler.setSharedPreferences("n_med_name","NIL");
+        }
+
+        if(sharedPrefHandler.getSharedPreferences("e_med_name").equals("NF")){
+            sharedPrefHandler.setSharedPreferences("e_med_name","NIL");
+        }
+
         taskSetter();
 
         water= (LinearLayout)findViewById(R.id.water);
@@ -168,8 +180,8 @@ public class MainActivity extends ActionBarActivity {
         coffee.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent coffee = new Intent(MainActivity.this,Feedback.class);
-                startActivity(coffee);
+                Intent hosp = new Intent(MainActivity.this,HospitalsWebActivity.class);
+                startActivity(hosp);
                 /*
                 final AlertDialog alertDialog = new AlertDialog.Builder(
                         MainActivity.this).create();
@@ -287,6 +299,11 @@ public class MainActivity extends ActionBarActivity {
         if(id == R.id.menu_settings){
             Intent settings = new Intent(MainActivity.this,SettingsActivity.class);
             startActivity(settings);
+        }
+
+        if(id == R.id.menu_feedback){
+            Intent feedback = new Intent(MainActivity.this,Feedback.class);
+            startActivity(feedback);
         }
 
         //noinspection SimplifiableIfStatement

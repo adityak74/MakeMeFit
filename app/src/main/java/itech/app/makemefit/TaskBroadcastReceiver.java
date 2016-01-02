@@ -32,7 +32,7 @@ public class TaskBroadcastReceiver extends BroadcastReceiver {
         int hr = time.getHours();
         int min = time.getMinutes();
 
-        SharedPrefHandler prefHandler = new SharedPrefHandler(arg0);
+        final SharedPrefHandler prefHandler = new SharedPrefHandler(arg0);
         String waterBool = prefHandler.getSharedPreferences("water");
         String foodBool = prefHandler.getSharedPreferences("food");
 
@@ -118,7 +118,8 @@ public class TaskBroadcastReceiver extends BroadcastReceiver {
                         if(min1==1) {
                             MediaPlayer mPlayer = MediaPlayer.create(arg0, R.raw.medication);
                             mPlayer.start();
-                            generateNotification(arg0, "Please take your medication", null);
+                            String tname = prefHandler.getSharedPreferences("m_med_name");
+                            generateNotification(arg0, "Please take your medication : " + tname, null);
                         }
                     }
                 }, 1000*60);
@@ -170,7 +171,8 @@ public class TaskBroadcastReceiver extends BroadcastReceiver {
                         if(min1==1) {
                             MediaPlayer mPlayer = MediaPlayer.create(arg0, R.raw.medication);
                             mPlayer.start();
-                            generateNotification(arg0, "Please take your medication", null);
+                            String tname = prefHandler.getSharedPreferences("m_med_name");
+                            generateNotification(arg0, "Please take your medication : " + tname, null);
                         }
                     }
                 }, 1000*60);
@@ -221,7 +223,8 @@ public class TaskBroadcastReceiver extends BroadcastReceiver {
                         if(min1==1) {
                             MediaPlayer mPlayer = MediaPlayer.create(arg0, R.raw.medication);
                             mPlayer.start();
-                            generateNotification(arg0, "Please take your medication", null);
+                            String tname = prefHandler.getSharedPreferences("e_med_name");
+                            generateNotification(arg0, "Please take your medication : " + tname, null);
                         }
                     }
                 }, 1000*60);

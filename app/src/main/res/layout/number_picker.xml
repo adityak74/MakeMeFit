@@ -58,6 +58,14 @@
 
                     </NumberPicker>
 
+                    <EditText
+                        android:gravity="center"
+                        android:id="@+id/md_name_et"
+                        android:hint="Enter tablet name(optional)"
+                        android:layout_margin="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
                     <Button
                         android:id="@+id/button1"
                         android:layout_width="match_parent"

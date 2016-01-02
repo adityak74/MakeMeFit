@@ -20,6 +20,28 @@
 
             <android.support.v7.widget.CardView
                 xmlns:android="http://schemas.android.com/apk/res/android"
+                cardView:cardBackgroundColor="#E74C3C"
+                app:cardElevation="4dp"
+                android:id="@+id/emergency_call"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                >
+
+                <TextView
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:padding="15dp"
+                    android:textAllCaps="true"
+                    android:textColor="#fff"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="EMERGENCY AMBULANCE CALL"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                xmlns:android="http://schemas.android.com/apk/res/android"
                 cardView:cardBackgroundColor="#ffffff"
                 app:cardElevation="4dp"
                 android:layout_margin="5dp"
@@ -68,6 +90,14 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content" />
 
+                    <TextView
+                        android:id="@+id/md1_name_tv"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_below="@+id/md1_tv"
+                        android:text="Tablet name not set"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
 
 
                 </RelativeLayout>
@@ -124,7 +154,14 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content" />
 
-
+                    <TextView
+                        android:id="@+id/md2_name_tv"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_below="@+id/md2_tv"
+                        android:text="Tablet name not set"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
 
 
                 </RelativeLayout>
@@ -183,7 +220,14 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content" />
 
-
+                    <TextView
+                        android:id="@+id/md3_name_tv"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_below="@+id/md3_tv"
+                        android:text="Tablet name not set"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
 
 
                 </RelativeLayout>

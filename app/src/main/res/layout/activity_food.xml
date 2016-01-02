@@ -104,6 +104,36 @@ Standard timings are set based on psychological research. You can set remainders
                 cardView:cardBackgroundColor="#ffffff"
                 app:cardElevation="4dp"
                 android:layout_marginBottom="5dp"
+                android:id="@+id/card_view2"
+                android:layout_height="wrap_content"
+                android:layout_width="fill_parent"
+                >
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/st221"
+                        android:layout_margin="10dp"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:gravity="center"
+                        android:textColor="#1a4e91"
+                        android:text="Why you need to have food?"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                </RelativeLayout>
+
+
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                cardView:cardBackgroundColor="#ffffff"
+                app:cardElevation="4dp"
+                android:layout_marginBottom="5dp"
                 android:id="@+id/card_view222"
                 android:layout_height="wrap_content"
                 android:layout_width="fill_parent"
